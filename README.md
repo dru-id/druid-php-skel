@@ -1,9 +1,7 @@
-# DRUID SDK for PHP (v1)
+# DRUID for PHP base project
 
-This repository contains the open source PHP SDK that allows you to integrate with DRUID platform
+This repository contains the open source DRUID base project that allows you to integrate with DRUID platform easily
 
 ## Installation
 
-
-
-Please see the installation instructions available in [the developers site](http://developers.dru-id.com/sdks/php-sdk/getting-started-with-php-sdk/).
+composer --repository-url="https://raw.githubusercontent.com/dru-id/druid-php-skel/master" --dev create-project druid/php-skel <project_folder_name>

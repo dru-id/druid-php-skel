@@ -1,9 +1,7 @@
 {
-  "name": "druid/php-skel",
+  "name": "mycompany/myproject",
   "version": "1.0.0",
-  "description": "Base project with DRUID sdk integration",
-  "license": "Apache-2.0",
-  "minimum-stability": "dev",
+  "description": "My awesome php site integrated with DRUID",
   "config": {
     "vendor-dir": "src/main/php/lib/vendor"
   },
@@ -13,8 +11,7 @@
   }],
   "require": {
     "php": ">=5.3.0",
-    "druid/php-sdk": "dev-master",
-    "mandrill/mandrill": "1.0.*"
+    "druid/php-sdk": "dev-master"
   }
 }
 

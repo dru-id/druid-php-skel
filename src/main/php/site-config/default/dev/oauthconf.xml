@@ -20,10 +20,7 @@
     </redirections>
 
     <sections>
-        <section id="231705665113870-encp-jmeter"/>
-        <section id="231705665113870-lwvaed"/>
         <section default="true" id="231705665113870-main"/>
-        <section id="231705665113870-st-jmeter"/>
     </sections>
 
     <endpoints>

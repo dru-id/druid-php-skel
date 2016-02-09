@@ -6,7 +6,7 @@
  * Please write similar code using your mvc framework (if you are using any) and implement your on logic
  */
 
-require __DIR__ . "/../lib/vendor/autoload.php";
+require __DIR__ . "/../../lib/vendor/autoload.php";
 
 use Genetsis\Identity;
 

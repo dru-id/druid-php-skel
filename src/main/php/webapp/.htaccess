@@ -1,1 +1,1 @@
-Redirect 301 /actions/callback /callbacks.php
+Redirect 301 /actions/callback /actions/callback.php

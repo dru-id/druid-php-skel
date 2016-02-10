@@ -26,12 +26,10 @@ try {
 
 <h1>Welcome to DRUID</h1>
 
-<h2>See how simple is integrate DRUID in your applications with out SDK</h2>
+<h2>See how simple is integrate DRUID in your applications with our SDK</h2>
 <h3>(you have more examples in <a href="http://developers.dru-id.com/sdks/php-sdk/sdk-code-examples/">http://developers.dru-id.com/sdks/php-sdk/sdk-code-examples/</a>)</h3>
 
-<h4>This page demostrates this example</h4>
-
-<script src="https://gist.github.com/saspelo/3eba49c3be6e84cf4e9a.js"></script>
+<h4>This page demostrates how to create login and register links for not connected user, and logout link and retrieve user email when user is connected:</h4>
 
 <p style="background-color:#e5ffff; border: thin solid #99ffff; padding: 20px">
 <?php
@@ -58,6 +56,9 @@ try {
 }
 ?>
 </p>
+
+<h4>The code:</h4>
+<script src="https://gist.github.com/saspelo/3eba49c3be6e84cf4e9a.js"></script>
 
 <h4>Now you are able to develop your application integrated with DRUID.</h4>
 

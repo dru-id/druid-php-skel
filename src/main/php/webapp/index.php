@@ -41,13 +41,7 @@ try {
     } else {
         $info = UserApi::getUserLogged();
 
-        if (is_object($info)) {
-            $user = $info->{"user"};
-        } else {
-            $user = $info["user"];
-        }
-
-        echo "Welcome " . $user["user_ids"]["email"]["value"];
+        echo "Welcome " . $info->user->user_ids->email->value;
         echo "<br/>";
         echo "<a href=\"/actions/logout.php\">Logout</a>";
     }

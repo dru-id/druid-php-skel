@@ -18,6 +18,7 @@ try {
 }
 
 $error = $_GET['error'];
+$uid = $_GET['uid'];
 $gohome = true;
 
 if (!$error) {
@@ -34,8 +35,12 @@ if (!$error) {
     }
 }
 
-if ($gohome) {
-    // redirect to home as example
-    header("Location: /");
-}
+if(file_exists($_SERVER['DOCUMENT_ROOT'].'/myactions/callback.php')) {
+	include $_SERVER['DOCUMENT_ROOT'].'/myactions/callback.php';
+} else {
 
+	if ($gohome) {
+	    // redirect to home as example
+	    header("Location: /");
+	}
+}

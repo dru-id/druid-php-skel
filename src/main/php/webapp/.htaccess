@@ -1,1 +1,2 @@
 Redirect 301 /actions/callback /actions/callback.php
+Redirect 301 /logout /actions/logout.php

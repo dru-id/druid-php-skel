@@ -31,6 +31,7 @@ try {
 
 <h4>This page demostrates how to create login and registration links for not connected users, and show logout link and retrieve user email when user is connected:</h4>
 
+
 <p style="background-color:#e5ffff; border: thin solid #99ffff; padding: 20px">
 <?php
 
@@ -42,8 +43,14 @@ try {
         $info = UserApi::getUserLogged();
 
         echo "Welcome " . $info->user->user_ids->email->value;
-        echo "<br/>";
-        echo "<a href=\"/actions/logout.php\">Logout</a>";
+
+        echo "<br/><br/>";
+
+        echo "<a href=\"opi.php\">Fill Opi</a>";
+
+        echo "<br/><br/>";
+
+        echo "<a href=\"/actions/logout\">Logout</a>";
     }
 } catch (Exception $e) {
     echo  $e->getMessage() . "\n" . $e->getTraceAsString() ;

@@ -37,10 +37,10 @@ if (!$error) {
 
 if(file_exists($_SERVER['DOCUMENT_ROOT'].'/myactions/callback.php')) {
 	include $_SERVER['DOCUMENT_ROOT'].'/myactions/callback.php';
-} else {
-
-	if ($gohome) {
-	    // redirect to home as example
-	    header("Location: /");
-	}
 }
+
+if ($gohome) {
+    // redirect to home as example
+    header("Location: /");
+}
+

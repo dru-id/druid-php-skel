@@ -41,8 +41,11 @@ try {
         echo "<a href=".URLBuilder::getUrlRegister().">Register</a>";
     } else {
         $info = UserApi::getUserLogged();
+        $picture = UserApi::getAvatarUrl($info->user->oid);
 
-        echo "Welcome " . $info->user->user_ids->email->value;
+        echo "<img src='$picture' onerror='this.src=/assets/img/placeholder.png' width='32'/>";
+
+        echo " Welcome " . $info->user->user_ids->email->value;
 
         echo "<br/><br/>";
 

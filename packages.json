@@ -3,9 +3,9 @@
 	    "druid/php-skel": {
 		    "dev-master": {
 			 "name": "druid/php-skel",
-			 "version": "v1.0.2",
+			 "version": "v1.0.3",
 			 "dist": {
-			      "url": "https://github.com/dru-id/druid-php-skel/archive/v1.0.2.zip",
+			      "url": "https://github.com/dru-id/druid-php-skel/archive/v1.0.3.zip",
 			      "type": "zip"
 			 }
 		    }

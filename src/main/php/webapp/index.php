@@ -16,7 +16,7 @@ try {
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>DRUId SDK integration example</title>
+    <title>DruID SDK integration example</title>
 </head>
 
 <body>

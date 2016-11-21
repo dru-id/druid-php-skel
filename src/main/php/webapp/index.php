@@ -59,9 +59,6 @@ try {
             echo "<a href=".URLBuilder::getUrlLogin().">Login</a> ";
             echo "<a href=".URLBuilder::getUrlRegister().">Register</a><br/><br/>";
             echo "<a href=".URLBuilder::getUrlRegister(null, null, $prefill).">Register Prefilled</a><br/>";
-            echo "<pre>";
-            print_r($prefill);
-            echo " </pre>";
         } else {
             $info = UserApi::getUserLogged();
             $picture = UserApi::getUserLoggedAvatarUrl();

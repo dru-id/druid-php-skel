@@ -33,32 +33,55 @@ try {
 
 
 <p style="background-color:#e5ffff; border: thin solid #99ffff; padding: 20px">
-<?php
+    <?php
 
- try{
-    if (!Identity::isConnected()) {
-        echo "<a href=".URLBuilder::getUrlLogin().">Login</a> ";
-        echo "<a href=".URLBuilder::getUrlRegister().">Register</a>";
-    } else {
-        $info = UserApi::getUserLogged();
-        $picture = UserApi::getUserLoggedAvatarUrl();
+    $prefill = array(
+        "email" => "revenge_of_the_sith@yopmail.net",
+        "screen_name" => "force-luke",
+        "national_id" => "force-luke",
+        "phone_number" => "5141944H",
+        "screen_name" => "666661138",
+        "birthday" => "04/05/1977",
+        "name" => "George",
+        "surname" => "Lucas",
+        "gender" => "2",
+        "telephone" => "916574120",
+        "streetAddress" => "C/ Francisca Delgado, 11",
+        "locality" => "Alcobendas",
+        "region" => "28",
+        "postalCode" => "28108",
+        "country" => "1"
+    );
 
-        echo "<img src='$picture' onerror='this.src=/assets/img/placeholder.png' width='32'/>";
 
-        echo " Welcome " . $info->user->user_ids->email->value;
+    try{
+        if (!Identity::isConnected()) {
+            echo "<a href=".URLBuilder::getUrlLogin().">Login</a> ";
+            echo "<a href=".URLBuilder::getUrlRegister().">Register</a><br/><br/>";
+            echo "<a href=".URLBuilder::getUrlRegister(null, null, $prefill).">Register Prefilled</a><br/>";
+            echo "<pre>";
+            print_r($prefill);
+            echo " </pre>";
+        } else {
+            $info = UserApi::getUserLogged();
+            $picture = UserApi::getUserLoggedAvatarUrl();
 
-        echo "<br/><br/>";
+            echo "<img src='$picture' onerror='this.src=/assets/img/placeholder.png' width='32'/>";
 
-        echo "<a href=\"opi.php\">Fill Opi</a>";
+            echo " Welcome " . $info->user->user_ids->email->value;
 
-        echo "<br/><br/>";
+            echo "<br/><br/>";
 
-        echo "<a href=\"/actions/logout\">Logout</a>";
+            echo "<a href=\"opi.php\">Fill Opi</a>";
+
+            echo "<br/><br/>";
+
+            echo "<a href=\"/actions/logout\">Logout</a>";
+        }
+    } catch (Exception $e) {
+        echo  $e->getMessage() . "\n" . $e->getTraceAsString() ;
     }
-} catch (Exception $e) {
-    echo  $e->getMessage() . "\n" . $e->getTraceAsString() ;
-}
-?>
+    ?>
 </p>
 
 <h4>The code:</h4>

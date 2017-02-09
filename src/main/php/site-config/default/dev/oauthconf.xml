@@ -9,7 +9,7 @@
     <data>
         <name>Test Client</name>
         <brand key="beefeater">Beefeater</brand>
-        <opi>xxxxxxxxxxxx</opi>
+        <opi>SPIRIT-ID-REGLAS</opi>
     </data>
 
     <redirections>
@@ -36,6 +36,9 @@
     </endpoints>
 
     <apis>
+	<api base-url="https://www.opinator.com/opi" id="opi" name="opi" version="1">
+	    <url id="rules">/r</url>
+	</api>	 
         <api base-url="http://api.ci.dru-id.com/api" id="api.user:v1" name="api.user" version="1">
             <url id="user">/user</url>
         </api>

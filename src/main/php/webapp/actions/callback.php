@@ -24,7 +24,7 @@ $gohome = true;
 if (!$error) {
     $code = $_GET['code'];
     if (!Identity::isConnected() && (isset($code) || (trim($code) != ''))) {
-        Identity::authorizeUser($code);
+        Identity::authorizeUser($code, \Genetsis\core\OAuthConfig::getDefaultSection());
     }
 
 } else {

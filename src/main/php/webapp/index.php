@@ -69,8 +69,6 @@ try {
 
             echo "<br/><br/>";
 
-            echo "<a href=\"opi.php\">Fill Opi</a>";
-
             echo "<br/><br/>";
 
             echo "<a href=\"/actions/logout\">Logout</a>";

@@ -69,7 +69,7 @@ try {
 
             echo "<br/><br/>";
 
-            echo "<br/><br/>";
+            echo "<a href=".URLBuilder::getUrlEditAccount().">Edit account</a> ";
 
             echo "<a href=\"/actions/logout\">Logout</a>";
         }
@@ -80,8 +80,7 @@ try {
 </p>
 
 <h4>The code:</h4>
-<script src="https://gist.github.com/saspelo/3eba49c3be6e84cf4e9a.js"></script>
-
+<script src="https://gist.github.com/germanjc/ccae144d6c967ec14cada3c5622cf699.js"></script>
 </body>
 
 </html>
